@@ -764,7 +764,7 @@
   #elif ENABLED(SKRE3Turbo)
     #define MOTHERBOARD BOARD_BTT_SKR_E3_TURBO
   #elif ENABLED(MachineEnder6)
-    #define MOTHERBOARD BOARD_CREALITY_V431
+    #define MOTHERBOARD BOARD_CREALITY_V427
   #elif ENABLED(MachineEnder7)
     #define MOTHERBOARD BOARD_CREALITY_V24S1
   #elif ENABLED(Creality427)
@@ -2930,7 +2930,7 @@
 // Direction of endstops when homing; 1=MAX, -1=MIN
 // :[-1,1]
 #if ANY(MachineEnder5, MachineEnder5Plus, MachineEnder6)
-  #define X_HOME_DIR 1
+  #define X_HOME_DIR -1
   #define Y_HOME_DIR 1
   #define Z_HOME_DIR -1
 #else
